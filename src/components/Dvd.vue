@@ -21,7 +21,6 @@ export default {
       h: 69,
       W: 400,
       H: 300,
-      context: null,
       interval: null,
       style: { position: "absolute", top:"0px", left: "0px" }
     }
