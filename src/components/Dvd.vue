@@ -34,10 +34,10 @@ export default {
       for (var i=0;i<1;i++) {
         this.x += this.vx;
         this.y += this.vy;
-        if(this.x+this.w>this.W) this.vx = -this.vx;
-        if(this.y+this.h>this.H) this.vy = -this.vy;
-        if(this.x<0) this.vx = -this.vx;
-        if(this.y<0) this.vy = -this.vy;
+        if(this.x+this.w>=this.W) this.vx = -this.vx;
+        if(this.y+this.h>=this.H) this.vy = -this.vy;
+        if(this.x<=0) this.vx = -this.vx;
+        if(this.y<=0) this.vy = -this.vy;
       }
       this.style.top = this.y + "px"
       this.style.left = this.x + "px"
